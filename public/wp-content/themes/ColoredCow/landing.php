@@ -1,9 +1,7 @@
 <?php
-
 /**
  * Template Name: Landing
  */
-
     get_header();
 ?>
 
