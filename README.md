@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Wordpress Installation ColoredCow
 
 ## Prerequisites
@@ -82,3 +83,6 @@
       ```
 
    * All geared up for the famous [5 minute install](https://codex.wordpress.org/Installing_WordPress). 
+=======
+# wordpress_shubham
+>>>>>>> dd45112e21b08c9649c324585341d8728e06ced8
