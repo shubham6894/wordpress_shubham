@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a role="button" class="btn btn-outline-secondary" href="events_control_page.php" style="font-family: 'Oswald'; font-size: 17px;">Admin Login<span class="sr-only">(current)</span>
+					<a role="button" class="btn btn-outline-secondary" href="#" style="font-family: 'Oswald'; font-size: 17px;">Admin Login<span class="sr-only">(current)</span>
 					</a>
 				</li>
 			</ul>
