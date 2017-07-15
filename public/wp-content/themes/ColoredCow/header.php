@@ -12,11 +12,11 @@
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#""><img src="<?php echo get_template_directory_uri(); ?>/RSVP_IMAGES/logo.png" width="180" height="45" alt="" /></a>
+		<a class="navbar-brand" href="#""><img src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" width="180" height="45" alt="" /></a>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<button type="button" class="btn btn-outline-secondary" href="#" style="font-family: 'Oswald'; font-size: 17px;">Admin Login<span class="sr-only">(current)</span>
+					<button type="button" class="adminbtn btn-outline-secondary btn-lg" href="#">Admin Login<span class="sr-only">(current)</span>
 					</button>
 				</li>
 			</ul>

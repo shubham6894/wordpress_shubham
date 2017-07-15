@@ -34,4 +34,14 @@ Text Domain: coloredcow
 	}
 }
 
+.adminbtn{
+	font-family: 'Oswald'; 
+	font-size: 17px;
+}
+
+body{
+	background-image: url('dist/img/bg.png');
+	background-repeat: no-repeat;
+}
+
 @import 'media';
