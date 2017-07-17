@@ -5,7 +5,7 @@
     get_header();
 ?>
 
-<?php echo "hello";
+<?php
 ?>
  
 <?php 
