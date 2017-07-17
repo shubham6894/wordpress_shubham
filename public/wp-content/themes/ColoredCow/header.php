@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<button type="button" class="btn-login btn-outline-secondary btn-lg">Admin Login<span class="sr-only">(current)</span>
+					<button type="button" class="adminbtn btn-outline-secondary btn-lg" href="#">Admin Login<span class="sr-only">(current)</span>
 					</button>
 				</li>
 			</ul>
