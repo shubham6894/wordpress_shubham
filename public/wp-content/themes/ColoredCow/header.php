@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title><?php echo bloginfo('name'); ?></title>
-    <?php wp_head(); ?>
-    
-    <nav class=" navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">				
+    <?php wp_head(); ?>   
+    <nav class=" navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">		
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -16,14 +15,12 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<button type="button" class="btn btn-outline-secondary oswald" href="#">Admin Login<span class="sr-only">(current)</span>
+					<button type="button" class="btn btn-outline-secondary font-oswald" href="#">Admin Login<span class="sr-only">(current)</span>
 					</button>
 				</li>
 			</ul>
 		</div>
 	</nav>
-
 </head>
-
 <body>
     

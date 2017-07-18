@@ -12,7 +12,6 @@ Text Domain: coloredcow
 @import 'mixin';
 @import 'fonts';
 
-// sass code for image alignment with content
 .alignright{
 	float: right;
 	&img{
@@ -43,7 +42,7 @@ body{
 }
 
 .latestevent{
-	@extend .marcellus;
+	@extend .font-marcellus;
 	padding-top: 40px;
 	font-size: 25px; 
 	color: $goldenrod;
@@ -51,14 +50,14 @@ body{
 }
 
 .upcomingevent{
-	@extend .marcellus;
+	@extend .font-marcellus;
 	font-size: 25px;
 	color: $white;
 	text-align: center;
 }
 
 .soiree-title{
-	@extend .marcellus;
+	@extend .font-marcellus;
 	padding-left: 22px;
 	font-size: 80px; 
 	color: $goldenrod;
@@ -75,7 +74,7 @@ body{
 }
 
 .request-invite{
-	@extend .marcellus;
+	@extend .font-marcellus;
 	padding-top: 7px;
 	font-size: 25px; 
 	color: $white;
@@ -83,7 +82,7 @@ body{
 }
 
 .modal-title{ 
-	@extend .marcellus;
+	@extend .font-marcellus;
 	font-size: 25px;
 }
 
@@ -91,7 +90,7 @@ body{
 	background-color: $whitesmoke;
 }
 
-#footer{
+.footer{
 	text-align:center;
 	bottom: 0;
 	width: 100%;
