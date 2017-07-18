@@ -37,16 +37,66 @@ Text Domain: coloredcow
 }
 
 body{
+	padding-top: 50px;
 	background-image: url('dist/img/bg.png');
 	background-repeat: no-repeat;
 }
 
-#footer {
+.latestevent{
+	@extend .marcellus;
+	padding-top: 40px;
+	font-size: 25px; 
+	color: $goldenrod;
+	text-align: center;
+}
+
+.upcomingevent{
+	@extend .marcellus;
+	font-size: 25px;
+	color: $white;
+	text-align: center;
+}
+
+.soiree-title{
+	@extend .marcellus;
+	padding-left: 22px;
+	font-size: 80px; 
+	color: $goldenrod;
+	text-align: justify;
+}
+
+.soiree-content{
+	font-weight: lighter;
+	padding-left: 22px;
+	font-style: inherit;
+	font-size: 20px;
+	color: $white;
+	text-align: justify;
+}
+
+.request-invite{
+	@extend .marcellus;
+	padding-top: 7px;
+	font-size: 25px; 
+	color: $white;
+	text-align: center;
+}
+
+.modal-title{ 
+	@extend .marcellus;
+	font-size: 25px;
+}
+
+.modal-body{
+	background-color: $whitesmoke;
+}
+
+#footer{
 	text-align:center;
 	bottom: 0;
 	width: 100%;
-	height:60px;
-    background-color: $black;
+	height:50px;
+    background-color: $lightblack;
     color: $white;
 }
 
