@@ -15,8 +15,8 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<button type="button" class="btn btn-outline-secondary font-oswald" href="#">Admin Login<span class="sr-only">(current)</span>
-					</button>
+					<a role="button" class="btn btn-outline-secondary font-oswald" href="<?php echo wp_login_url(); ?>">Admin Login<span class="sr-only">(current)</span>
+					</a>
 				</li>
 			</ul>
 		</div>
