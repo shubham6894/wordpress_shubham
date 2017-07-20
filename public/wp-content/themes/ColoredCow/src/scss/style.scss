@@ -36,7 +36,7 @@ Text Domain: coloredcow
 }
 
 body{
-	padding-top: 50px;
+	padding-top: 80px;
 	background-image: url('dist/img/bg.png');
 	background-repeat: no-repeat;
 }
@@ -121,6 +121,25 @@ body{
 	text-align: center;
 	color: $darkorange;
 	padding-bottom: 80px;
+}
+
+.rsvphead{
+	@extend .font-oswald;
+	padding-top: 40px;
+	color: $goldenrod;
+	font-size: 45px;
+	text-align: center;
+}
+
+.rsvpdetails{
+	@extend .font-roboto;
+	font-size: 35px;
+	color: $white;
+	text-align: center;
+}
+
+.rsvpbutton{
+	padding-top: 40px;
 }
 
 .footer{
