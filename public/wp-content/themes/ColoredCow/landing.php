@@ -3,9 +3,15 @@
  * Template Name: Landing
  */
     get_header();
+    $field=get_post_meta('30');
+    $posttitle=get_post_field('post_title', '30');
+    $theme=$field['theme'][0];
+    $venue=$field['venue'][0];
+    $date=$field['date'][0];
+
 ?>
 <body>
-	<div class="container">
+    <div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="soiree-title">Soiree</div>
@@ -17,11 +23,13 @@
 				</div>		
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="latestevent">Coming up...</div>
+			    <!-- <div class="latestevent">Coming up...</div> -->
 				<div class="upcomingevent">
-					hello, there is no event created yet.
+					<div class="posttitle"><?php echo $posttitle ?></div>
+                    <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
+                    <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime(str_replace('/', '-', $date)));?></div><br> 
+                    <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
 				</div>
-				<hr>
 			</div>	
 		</div>
     </div>
