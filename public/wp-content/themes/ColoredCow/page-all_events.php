@@ -23,6 +23,7 @@ $posts= new WP_Query(array(
                 $theme=get_field("theme");
                 $venue=get_field("venue");
                 $date=get_field("date");    
+            
             if($date>$currentdate)
             {
                 ?>
@@ -37,7 +38,7 @@ $posts= new WP_Query(array(
 				</div>
             <div class="col-lg-4 col-md-12 col-sm-12">
             	<div class="request">
-	              <button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>
+	              <button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" id="request_modal_button" data-id="<?php echo $id ?>">Request Invite</button>
 				</div>
 			</div>
 			<div class="container">

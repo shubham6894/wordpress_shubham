@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="modal-footer pull-left">
-                    <button type="button" class="btn btn-success" id="Submit_request">Request</button>
+                    <button type="button" class="btn btn-success" id="Submit_request" >Request</button>
                     </div>
                 </form> 
             </div>

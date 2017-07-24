@@ -19,23 +19,24 @@
 				<div class="soiree-title">Soiree</div>
 			  	<p class="soiree-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come and join us over music, food, drinks and some moments full of laughter and joy.</p>
 				<hr>
+                <?php
+                    while ($posts->have_posts()) {
+                    $posts->the_post();
+                    $id = $post->ID;    
+                    $eventname=get_the_title();
+                    $theme=get_field("theme");
+                    $venue=get_field("venue");
+                    $date=get_field("date");    
+                    
+                    if($date>$currentdate)
+                    {
+                ?>
 				<div class="request-invite">
 					<div>Want to join the party?</div>
-					<button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>		
+					<button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" id="request_modal_button" data-id="<?php echo $id ?>">Request Invite</button>		
 				</div>		
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
-            <?php
-                while ($posts->have_posts()) {
-                $posts->the_post();
-                $id = $post->ID;    
-                $eventname=get_the_title();
-                $theme=get_field("theme");
-                $venue=get_field("venue");
-                $date=get_field("date");    
-            if($date>$currentdate)
-            {
-                ?>
 				<div class="upcomingevent">
 					<div class="posttitle"><?php echo $eventname ?></div>
                     <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>

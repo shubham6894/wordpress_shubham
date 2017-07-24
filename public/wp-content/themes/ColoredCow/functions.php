@@ -21,13 +21,15 @@ if ( ! function_exists( 'cc_styles' ) ) {
 add_filter('show_admin_bar','__return_false');
 
 function add_requested_guests(){
-    if(isset($_POST['request_name'])){
-        $request_name=$_POST['request_name'];
-        $request_email=$_POST['request_emailid'];
-        $request_phone=$_POST['request_phone'];
+    if(isset($_POST['requested_guest_name'])){
+        $requested_guest_name=$_POST['requested_guest_name'];
+        $requested_guest_email=$_POST['requested_guest_email'];
+        $requested_guest_number=$_POST['requested_guest_number'];
+        $requested_guest_gender=$_POST['requested_guest_gender'];
+        $modalid=$_POST['eventid'];
         
         $this_post = array(
-          'post_title'    => $request_name,
+          'post_title'    => $requested_guest_name,
           'post_status'   => 'publish',
           'post_type'     => 'guests'
          );
@@ -35,10 +37,11 @@ function add_requested_guests(){
         if( !$post_id ){
             wp_send_json_error();
         }
-        add_post_meta($post_id, 'guest_email', $request_emailid);
-        add_post_meta($post_id, 'mobile_number', $request_phone);
-        add_post_meta($post_id, 'gender', $gender);
-        add_post_meta($post_id, 'status', 'Requested');
+        add_post_meta($post_id, 'guest_email', $requested_guest_email);
+        add_post_meta($post_id, 'mobile_number', $requested_guest_number);
+        add_post_meta($post_id, 'gender', $requested_guest_gender);
+        add_post_meta($post_id, 'status', 'Waiting For Approval');
+        add_post_meta($post_id, 'id', $modalid);
         
     }
 }
