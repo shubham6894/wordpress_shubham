@@ -37,9 +37,12 @@ get_header('rsvp_confirmation');
 				</div>
             <div class="col-lg-4 col-md-12 col-sm-12">
             	<div class="request">
-	              <button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo">Request Invite</button>
+	              <button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>
 				</div>
 			</div>
+			<div class="container">
+        		<?php get_template_part( 'templates/content', 'requestmodal' ); ?>
+    		</div>
             <?php
         	}
             }

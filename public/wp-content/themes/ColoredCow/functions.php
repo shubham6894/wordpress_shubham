@@ -21,5 +21,3 @@ if ( ! function_exists( 'cc_styles' ) ) {
 add_filter('show_admin_bar','__return_false');
 
 ?>
-
-
