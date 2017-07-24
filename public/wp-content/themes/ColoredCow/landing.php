@@ -5,7 +5,7 @@
     get_header();
 
     $currentdate=date('Y-m-d');
-    $posts= get_posts(array(
+    $posts= new WP_Query(array(
         'post_type' => 'events',
         'meta_key'  => 'date',
         'order_by'  => 'meta_value',
@@ -26,18 +26,18 @@
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
             <?php
-                foreach ($posts as $post) {
-                $id = $post->ID;
-                $field=get_post_meta($id);
-                $posttitle=$post->post_title;
-                $theme=$field['theme'][0];
-                $venue=$field['venue'][0];
-                $date=$field['date'][0];    
+                while ($posts->have_posts()) {
+                $posts->the_post();
+                $id = $post->ID;    
+                $eventname=get_the_title();
+                $theme=get_field("theme");
+                $venue=get_field("venue");
+                $date=get_field("date");    
             if($date>$currentdate)
             {
                 ?>
 				<div class="upcomingevent">
-					<div class="posttitle"><?php echo $posttitle ?></div>
+					<div class="posttitle"><?php echo $eventname ?></div>
                     <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
                     <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
                     <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
