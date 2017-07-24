@@ -19,7 +19,7 @@
                         </div>
                         <div class="form-group">
                             <label for="recipient-number" class="form-control-label">Mobile Number:</label>
-                            <input type="number" class="form-control"  placeholder="10 digit mobile no." name="phonenumber" id="phonenumber" max="9999999999" required="required">    
+                            <input type="number" class="form-control"  placeholder="10 digit mobile no." name="phonenumber" id="request_phone" max="9999999999" required="required">    
                         </div>  
                         <div class="form-group">
                             <label for="recipient-name" class="form-control-label">Gender:</label>
