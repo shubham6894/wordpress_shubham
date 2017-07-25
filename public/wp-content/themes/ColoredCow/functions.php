@@ -40,7 +40,7 @@ function add_requested_guests(){
         add_post_meta($post_id, 'guest_email', $requested_guest_email);
         add_post_meta($post_id, 'mobile_number', $requested_guest_number);
         add_post_meta($post_id, 'gender', $requested_guest_gender);
-        add_post_meta($post_id, 'status', 'Waiting For Approval');
+        add_post_meta($post_id, 'status', 'Requested');
         add_post_meta($post_id, 'id', $modalid);
         
     }
