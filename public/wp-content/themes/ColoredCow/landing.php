@@ -41,18 +41,18 @@
                     <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
                     <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
                     <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
-    			</div>
+                </div>
                 <?php
                 break;
                 }
                 }?>
-		    </div>	
+            </div>	
         </div>
     </div>
     <div class="container">
         <?php get_template_part( 'templates/content', 'requestmodal' ); ?>
     </div>
-	<hr>
+    <hr>
     <div class="container-fluid carouselcontainer">
         <div class="col-lg-8 col-md-12 col-sm-8 carouselcontainer">
             <div class="eventgallery"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event Gallery</div>
