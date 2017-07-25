@@ -23,12 +23,12 @@ get_header('rsvp_confirmation');
             $theme=get_field("theme");
             $venue=get_field("venue");
             $date=get_field("date");    
-        	if($date>$currentdate){
+        if($date>$currentdate){
         ?>
         <div class="col-lg-8 col-md-12 col-sm-12">
-			<div class="upcomingevent">
-				<div class="posttitle"><?php echo $eventname ?></div>
-				<div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
+            <div class="upcomingevent">
+                <div class="posttitle"><?php echo $eventname ?></div>
+                <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
 	            <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
 	            <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br> 
                 <hr>
@@ -38,7 +38,7 @@ get_header('rsvp_confirmation');
             <div class="request">
                 <button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>
             </div>
-		</div>
+        </div>
         <div class="container">
             <?php get_template_part( 'templates/content', 'requestmodal' );?>
         </div>
