@@ -6,9 +6,8 @@ $posts= get_posts(array(
 <body class="guesttable">
 <div class="container">
 <div class="row">
-<div class="col-lg-2 col-md-12 col-sm-12">
-<div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle btn-lg btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="col-lg-4 col-md-12 col-sm-12">
+  <button type="button" class="btn btn-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     All Events
   </button>
   <div class="dropdown-menu">
@@ -19,10 +18,11 @@ $posts= get_posts(array(
     <a class="dropdown-item" href="#">Event 3</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">Event 4</a>
-  </div>
 </div>
 </div>
-<div class="col-lg-10 col-md-12 col-sm-12">
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
 	<table class="table table-hover table-striped table-bordered table-responsive">
 	<thead>
 		<tr>
