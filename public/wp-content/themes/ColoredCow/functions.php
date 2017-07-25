@@ -31,7 +31,8 @@ function add_requested_guests(){
         $this_post = array(
           'post_title'    => $requested_guest_name,
           'post_status'   => 'publish',
-          'post_type'     => 'guests'
+          'post_type'     => 'guests',
+          'post_category' => array(4),
          );
         $post_id = wp_insert_post( $this_post );
         if( !$post_id ){
@@ -41,6 +42,7 @@ function add_requested_guests(){
         add_post_meta($post_id, 'mobile_number', $requested_guest_number);
         add_post_meta($post_id, 'gender', $requested_guest_gender);
         add_post_meta($post_id, 'status', 'Requested');
+
         add_post_meta($post_id, 'id', $modalid);
         
     }

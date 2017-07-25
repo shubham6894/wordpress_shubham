@@ -20,6 +20,7 @@
 				<p class="soiree-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come and join us over music, food, drinks and some moments full of laughter and joy.</p>
 				<hr>
 				<?php
+					if($posts->have_posts()){
 					while ($posts->have_posts()) {
 					$posts->the_post();
 					$id = $post->ID;    
@@ -46,8 +47,10 @@
 				<?php
 				break;
 				}
-				}?>
-			</div>	
+				}
+				}
+				?>
+			</dilv>	
 		</div>
 	</div>
 	<div class="container">
