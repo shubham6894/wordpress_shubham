@@ -18,15 +18,8 @@
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="soiree-title">Soiree</div>
 				<p class="soiree-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come and join us over music, food, drinks and some moments full of laughter and joy.</p>
-				<hr> 
-				<div class="request-invite">
-					<div>Want to join the party?</div>
-					<button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>		
-				</div>		
-			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12">
+				<hr>
 				<?php
-					if($posts->have_posts()){
 					while ($posts->have_posts()) {
 					$posts->the_post();
 					$id = $post->ID;    
@@ -34,9 +27,16 @@
 					$theme=get_field("theme");
 					$venue=get_field("venue");
 					$date=get_field("date");    
-				if($date>$currentdate)
-				{
+					
+					if($date>$currentdate)
+					{
 				?>
+				<div class="request-invite">
+					<div>Want to join the party?</div>
+					<button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" id="request_modal_button" data-id="<?php echo $id ?>">Request Invite</button>	
+				</div>		
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="upcoming-event">
 					<div class="post-title"><?php echo $event_name ?></div>
 					<div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
@@ -45,9 +45,8 @@
 				</div>
 				<?php
 				break;
-				}
-				}
-				}?>
+			}
+			}?>
 			</div>	
 		</div>
 	</div>
@@ -55,6 +54,7 @@
 		<?php get_template_part( 'templates/content', 'requestmodal' ); ?>
 	</div>
 	<hr>
+
 	<div class="container-fluid carousel-container">
 		<div class="col-lg-8 col-md-12 col-sm-8 carouselcontainer">
 			<div class="event-gallery"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event Gallery</div>
@@ -111,8 +111,7 @@
 					<div class="carousel-item">
 						<img class="d-block img-fluid images-carousel" src="<?php echo esc_url(get_template_directory_uri()."/dist/img/soiree12.jpg");?>"="RSVP_IMAGES/soiree12.jpg" alt="twelveth slide">
 						<div class="carousel-caption d-none d-md-block">#SOIREE 12.</div>
-					</div>
-					
+					</div>	
 				</div>
 				<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
