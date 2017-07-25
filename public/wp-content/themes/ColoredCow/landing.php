@@ -45,8 +45,8 @@
 				</div>
 				<?php
 				break;
-			}
-			}?>
+				}
+				}?>
 			</div>	
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 	<hr>
 
 	<div class="container-fluid carousel-container">
-		<div class="col-lg-8 col-md-12 col-sm-8 carouselcontainer">
+		<div class="col-lg-8 col-md-12 col-sm-8 carousel-container">
 			<div class="event-gallery"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event Gallery</div>
 			<div id="carouselIndicators" class="carousel slide"  data-ride="carousel">
 				<ol class="carousel-indicators">
