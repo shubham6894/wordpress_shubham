@@ -14,17 +14,17 @@
 ?>
 <body>
     <div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="soiree-title">Soiree</div>
-			  	<p class="soiree-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come and join us over music, food, drinks and some moments full of laughter and joy.</p>
-				<hr>
-				<div class="request-invite">
+	    <div class="row">
+		    <div class="col-lg-6 col-md-12 col-sm-12">
+		        <div class="soiree-title">Soiree</div>
+			     <p class="soiree-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come and join us over music, food, drinks and some moments full of laughter and joy.</p>
+			    <hr>
+			    <div class="request-invite">
 					<div>Want to join the party?</div>
 					<button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite</button>		
 				</div>		
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <?php
                     while ($posts->have_posts()) {
                     $posts->the_post();
@@ -35,21 +35,21 @@
                     $date=get_field("date");    
                 if($date>$currentdate)
                 {
-                    ?>
-    				<div class="upcomingevent">
-    					<div class="posttitle"><?php echo $eventname ?></div>
+                ?>
+    			    <div class="upcomingevent">
+    				    <div class="posttitle"><?php echo $eventname ?></div>
                         <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
                         <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
                         <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
-    				</div>
+    			    </div>
                     <?php
                     break;
                 }
                 }?>
-			</div>	
-		</div>
+		    </div>	
+	    </div>
     </div>
-	<div class="container">
+    <div class="container">
         <?php get_template_part( 'templates/content', 'requestmodal' ); ?>
     </div>
 	<hr>
