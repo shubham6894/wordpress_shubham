@@ -23,9 +23,8 @@ $posts= new WP_Query(array(
                 $theme=get_field("theme");
                 $venue=get_field("venue");
                 $date=get_field("date");    
-            if($date>$currentdate)
-            {
-                ?>
+            	if($date>$currentdate){
+            ?>
                 <div class="col-lg-8 col-md-12 col-sm-12">
 				<div class="upcomingevent">
 					<div class="posttitle"><?php echo $eventname ?></div>

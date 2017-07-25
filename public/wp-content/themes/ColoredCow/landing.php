@@ -25,27 +25,27 @@
 				</div>		
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
-            <?php
-                while ($posts->have_posts()) {
-                $posts->the_post();
-                $id = $post->ID;    
-                $eventname=get_the_title();
-                $theme=get_field("theme");
-                $venue=get_field("venue");
-                $date=get_field("date");    
-            if($date>$currentdate)
-            {
-                ?>
-				<div class="upcomingevent">
-					<div class="posttitle"><?php echo $eventname ?></div>
-                    <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
-                    <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
-                    <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
-				</div>
                 <?php
-                break;
-            }
-            }?>
+                    while ($posts->have_posts()) {
+                    $posts->the_post();
+                    $id = $post->ID;    
+                    $eventname=get_the_title();
+                    $theme=get_field("theme");
+                    $venue=get_field("venue");
+                    $date=get_field("date");    
+                if($date>$currentdate)
+                {
+                    ?>
+    				<div class="upcomingevent">
+    					<div class="posttitle"><?php echo $eventname ?></div>
+                        <div><i class="fa fa-grav icons" aria-hidden="true">&nbsp;</i><?php echo $theme ?></div><br>
+                        <div><i class='fa fa-calendar icons' aria-hidden='true'></i>&nbsp;<?php echo date('l, jS F, Y', strtotime($date));?></div><br> 
+                        <div><i class='fa fa-map-marker fa-lg icons' aria-hidden='true'></i>&nbsp;<?php echo $venue ?></div><br><br>
+    				</div>
+                    <?php
+                    break;
+                }
+                }?>
 			</div>	
 		</div>
     </div>
@@ -54,8 +54,8 @@
     </div>
 	<hr>
     <div class="container-fluid carouselcontainer">
-    <div class="col-lg-8 col-md-12 col-sm-8 carouselcontainer">
-        <div class="eventgallery"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event Gallery</div>
+        <div class="col-lg-8 col-md-12 col-sm-8 carouselcontainer">
+            <div class="eventgallery"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event Gallery</div>
             <div id="carouselIndicators" class="carousel slide"  data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -122,7 +122,7 @@
                 </a>
             </div>
         </div>
-        </div>
+    </div>
 </body>
 
 <?php 
