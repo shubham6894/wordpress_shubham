@@ -3,11 +3,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title><?php echo bloginfo('name'); ?></title>
-    <?php wp_head(); ?>   
-    <nav class=" navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">		
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title><?php echo bloginfo('name'); ?></title>
+	<?php wp_head(); ?>   
+	<nav class=" navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">		
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -23,4 +23,4 @@
 	</nav>
 </head>
 <body>
-    
+	

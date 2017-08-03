@@ -4,7 +4,7 @@
  */
 	get_header('rsvp_confirmation');
 ?>	
-<body>
+<body class="bg-image">
 	<div class="container">
 		<div class="card-title rsvp-head">Thank you! for confirming your presence. Looking forward to see you at the event.</div>
 		<hr>
